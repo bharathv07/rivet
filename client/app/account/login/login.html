@@ -1,0 +1,42 @@
+
+    <style>
+    body {
+         background-color: #556C8C;
+         text-align: center;
+    }
+    
+    </style>
+    <br>
+    <img src="../../assets/images/rivet.png"/>
+    <br> <br> <br><br>
+
+<form class="login-form" name="form" ng-submit="login(form)" novalidate>
+   
+        <div class='row'>
+            <div class='col-xs-4 col-xs-offset-4'>
+            <input id="login-username" class="form-control"font-size="14px" height="700px" width="5000px" id="user" name="user" placeholder="Username" title="Username" type="email" ng-model="user.email" required />
+          </div>  <br><br>
+       
+        <div class='col-xs-4 col-xs-offset-4'>
+            <input id="login-password" class="form-control" name="password" placeholder="Password" title="Your Password" type="password" ng-model="user.password" required />
+          </div>  <br>
+          <br>
+        
+        <div class='col-xs-4 col-xs-offset-4' style="margin-top: 5px;margin-bottom:10px;">
+            <button class="btn" style="background-color:lightblue" id="login" name="login" type="submit" > Login </button>
+        
+            <a href="/signup" id="signup" class="btn" style="background-color:lightblue" name="signup" type="button"> Signup </a>
+        
+        </div>
+    </div>
+   
+</form>
+
+<div>
+  <a class="btn btn-facebook" href="" ng-click="loginOauth('facebook')">
+    <i class="fa fa-facebook"></i> Connect with Facebook
+  </a>
+  <a class="btn btn-twitter" href="" ng-click="loginOauth('twitter')">
+    <i class="fa fa-twitter"></i> Connect with Twitter
+  </a>
+</div>
