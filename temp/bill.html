@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script language="JavaScript">
+function toggle(source) {
+  checkboxes = document.getElementsByName('query_myTextEditBox');
+  for(var i=0, n=checkboxes.length;i<n;i++) {
+    checkboxes[i].checked = source.checked;
+  }
+}
+</script>  
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<style>
+h2{
+ 	color: #add8e6;
+ }
+body{
+  
+  background-color: #556C8C;
+         }
+
+table {
+    width:40%;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+    text-align: left;
+}
+table tr:nth-child(even) {
+    background-color: #eee;
+}
+table tr:nth-child(odd) {
+   background-color:#fff;
+}
+table th	{
+    background-color: lightblue;
+    color: white;
+}
+</style>
+</head>
+<body>
+<br>
+    <center><img src="rivet.png" height="50" width="50"/></center>
+    <br>
+    <center><h2>Bills</h2></center>
+
+<center><table >
+  <tr>
+    <th>Check </th>
+    <th>Type</th>		
+    <th>Total</th>
+  </tr>
+  <tr>
+    <td><center><input type="checkbox" name="query_myTextEditBox"></center> </td>
+    <td>Rent</td>		
+    <td>$2000</td>
+  </tr>
+  <tr>
+    <td><center><input type="checkbox" name="query_myTextEditBox"></center></td>
+    <td>Napkins</td>		
+    <td> $5.67 * 20 =$113.4</td>
+  </tr>
+  <tr>
+    <td><center><input type="checkbox" name="query_myTextEditBox"></center></td>
+    <td>Electricity</td>		
+    <td>$120</td>
+  </tr>
+  <tr>
+    <td><center><input type="checkbox" name="query_myTextEditBox"></center></td>
+    <td>Salaries</td>    
+    <td>20 * 40 * 4=$3200</td>
+
+  </tr>
+  <tr>
+  	<td><center><input type="checkbox" onClick="toggle(this)"></center></td>
+	<td> Total </td>
+  	<td>$5,433.4</td>
+  </tr>
+  
+</table></center>
+<br>
+<br><center>
+<a href="up.html">
+<input type="submit" class="btn btn-info" value="Home"></a>
+<a href="bug.html">
+ <input type="submit" class="btn btn-info" value="Pay with Capital One!"></a>
+ <input type="submit" class="btn btn-info" value="Cancel">
+ </center>
+
+</body>
+</html>

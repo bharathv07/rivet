@@ -1,0 +1,63 @@
+<html>
+<head>
+	<title> Login </title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <style>
+    body {
+         background: linear-gradient(#556C8C    ,white);
+         text-align: center;
+         margin: 0;
+         height: 100%;
+    }
+    h2 {
+    color:white;
+    font-family:Georgia;
+    font-size:250%;
+    }
+    h3 {
+    color:white;
+    font-family:Georgia;
+    font-size:120%;
+    }
+    h4 {
+    color:white;
+    font-family:Georgia;
+    font-size:80%;
+    }
+    button {
+    height:100px;
+    width:300px;
+    color:white;
+    font-family:Georgia;
+    font-size:100%;
+    }
+    
+    </style>
+</head>
+<body>
+    <br>
+    <img src="rivet.png"/>
+    <h2> Rivet </h2>
+    <h3> The Go-to-place for SMB to </h3>
+    <h3> benchmark costs/savings </h3>
+    <h4> Easy and expense free process: Just fill in </h4>
+    <h4> your expenses and compare costs with other </h4>
+    <h4> businesses like yourself - and start saving! </h4> 
+<form id="login">
+        
+        <div class='test'>
+            <button style="background-color:darkblue" id="login" name="login" type="button" > Login and get perks! </button>
+        </div>
+        <div class='test'>
+            <button style="background-color:darkblue" id="login" name="login" type="button" > Try Anonymously </button>
+        </div>
+        <div class='test'>
+            <button style="background-color:darkblue" id="login" name="login" type="button" > Capital One VIP Clients </button>
+        </div>
+    </div>
+   
+</form>
+
+</body>
+
+</html>
